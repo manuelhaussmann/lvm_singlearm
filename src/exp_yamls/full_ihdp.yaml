@@ -1,0 +1,46 @@
+exp_name: "full"
+dataset: "ihdp"
+model_name: [ "our_snet",
+              "our_snet_ident",
+              "our_snet_sep",
+              "our_snet_ident_sep",
+              "snet",
+              "singlenet",
+              "tnet",
+              "tarnet",
+              "cfrnet",
+              "our_sep",
+              "our",
+              "vae_y",
+              "ident_sep",
+              "ident",
+              "tedvae",
+              "our_tedvae",
+              "our_tedvae_ident",
+              "our_tedvae_sep",
+              "our_tedvae_ident_sep" ]
+exp_setting: "full"
+data_params:
+  npred: 25
+  id: 1
+  idstart: 0
+  rep_id: 1
+  shift: [ 0, ]
+  prob_flip: [ 0.0, ]
+model_params:
+  dim_x: 28
+  dim_z: 5
+  dim_u: 50
+  dim_zm: 10
+  reg_mmd: 1.0
+  lam: 1.0
+  sig_y: 0.1
+  sig_x: 1.0
+  discr: True
+  missing_x: False
+exp_params:
+  n_epochs: 500
+  lr: 1e-3
+  wdecay: 1e-4
+  grace_period: 20
+  save_model: True

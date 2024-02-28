@@ -1,0 +1,39 @@
+exp_name: "tte"
+dataset: "ihdp"
+model_name: [ "our_snet",
+              "our_snet_ident",
+              "snet",
+              "tarnet",
+              "cfrnet",
+              "our_sep",
+              "our",
+              "vae",
+              "vae_y",
+              "ident_sep",
+              "ident" ]
+exp_setting: "tte"
+data_params:
+  npred: 15
+  id: 1
+  idstart: 0
+  rep_id: 1
+  shift: [ 3, ]
+  prob_flip: [ 0.8, ]
+model_params:
+  dim_x: 28
+  dim_z: 5
+  dim_u: 50
+  dim_zm: 10
+  reg_mmd: 1.0
+  sig_y: 0.1
+  sig_x: 1.0
+  lam: 0.0
+  missing_x: False
+  discr: True
+exp_params:
+  n_epochs: 500
+  lr: 1e-3
+  wdecay: 1e-4
+  grace_period: 30
+  save_model: True
+    
