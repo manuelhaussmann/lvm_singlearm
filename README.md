@@ -4,8 +4,8 @@ This repo contains a reference implementation for
 
 **Estimating treatment effects from single-arm trials via latent-variable modeling**  
 _Manuel Haussmann, Tran Minh Son Le, Viivi Halla-aho, Samu Kurki, Jussi Leinonen, Miika Koskinen, Samuel Kaski, Harri Lähdesmäki_  
-_To be published at the 27th International Conference on Artificial Intelligence and Statistics_  
-[Preprint](https://arxiv.org/abs/2311.03002)
+_27th International Conference on Artificial Intelligence and Statistics_  
+[Paper](https://proceedings.mlr.press/v238/haussmann24a.html)
 
 
 ## Usage
